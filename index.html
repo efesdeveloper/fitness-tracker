@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fc7b6f3b0e.js"></script>
+    <title>Fitness</title>
+</head>
+<body>
+    <div class="container">
+        <div id="jumbotron">
+                <div class="welcome"><h2>Welcome!</h2></div>
+                <div class="overview"><p>Overview of your activity</p></div>
+        </div>
+        <!-- ==================== DATE ======================= -->
+        <div id="date">
+            <div class="days">
+            <span id="monday">
+                <h4>10</h4>
+                <h4>MON</h4>
+            </span>
+            </div>
+            <div class="days">
+                <span id="tuesday">
+                    <h4>11</h4><h4>TUE</h4>
+                </span></div>
+            <div class="days">
+                <span id="wednesday" >
+                    <h4>12</h4><h4>WED</h4>
+                </span>
+            </div>
+            <div class="days">
+                <span id="thursday">
+                    <h4>13</h4><h4>THU</h4>
+                </span>
+            </div>
+            <div class="days">
+                <span id="friday">
+                    <h4>14</h4><h4>FRI</h4>
+                </span>
+            </div>
+        </div>
+
+         <!-- ==================== ACTIVITY ======================= -->
+        <div class="container-active">
+            <div class="try">
+                    <span class="watch"><i class="fas fa-stopwatch fa-lg"></i></span>
+                    <span class="alo">
+                        <ul>
+                            <li class="top text-primary">Activity</li>
+                            <li class="text-secondary">Average</li>
+                        </ul>
+                    </span>
+            </div>
+            
+            <div class="num">
+                <h1 class="average-steps" id="activity" ></h1>
+            </div>
+        </div>
+
+        <!-- ==================== STEPS ======================= -->
+        <div class="content">
+
+                <div class="left">
+                    <div class="icon"><i class="fas fa-running fa-lg"></i></div>
+                </div>
+                <div class="text">
+                    <ul>
+                        <li class="text-primary">Steps</li>
+                        <li class="text-secondary">Total</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <h1 id="steps"></h1>
+                </div>
+                
+            </div>
+        <!-- ==================== CALORIES ======================= -->
+        <div class="content">
+
+            <div class="left">
+                <div class="icon"><i class="fas fa-fire fa-lg"></i></div>
+            </div>
+
+            <div class="text-last" style="margin-left: -3rem;">
+                <ul>
+                    <li class="text-primary">Calories</li>
+                    <li class="text-secondary">Total Burned</li>
+                </ul>
+             </div>
+
+            <div class="right">
+                    <h1  id="calories"></h1>
+            </div>
+                    
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
